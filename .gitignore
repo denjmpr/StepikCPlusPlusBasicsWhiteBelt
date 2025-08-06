@@ -1,0 +1,71 @@
+### JetBrains / CLion project files
+# Ignore everything under .idea by default (safer across plugins and IDE versions)…
+.idea/
+# …but keep a few shareable settings (optional to version):
+!.idea/.gitignore
+!.idea/codeStyles
+!.idea/inspectionProfiles
+!.idea/runConfigurations
+
+# CMake
+cmake-build-*/
+
+# File-based project format
+*.iws
+
+# IntelliJ
+out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+
+### OS-specific files
+# macOS Finder and Windows Explorer metadata (safe to ignore in any repo)
+.DS_Store
+Thumbs.db
+
+
+### Build directories (out-of-source)
+# Common build output folders created by CMake/IDEs
+/build/
+
+
+### CMake (in-source build artifacts)
+# Safeguard in case someone runs `cmake .` in the project root
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+Makefile
+install_manifest.txt
+
+# Compilation database is usually generated; ignore unless you plan to commit it
+compile_commands.json
+
+
+### Coverage & profiling outputs
+# LLVM/GCov coverage files and profiling data
+*.gcda
+*.gcno
+*.gcov
+*.profraw
+*.profdata
+
+
+### Logs and temporary files
+# Generic logs, editor swap files and local caches
+*.log
+*.swp
+*.swo
+*~
+.cache/
